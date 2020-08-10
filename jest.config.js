@@ -53,9 +53,10 @@ module.exports = {
 
   // A path to a module which exports an async function that is triggered once before all test suites
   // globalSetup: undefined,
-
+  //globalSetup: './setup.js',
   // A path to a module which exports an async function that is triggered once after all test suites
   // globalTeardown: undefined,
+  //globalTeardown: './teardown.js',
 
   // A set of global variables that need to be available in all test environments
   // globals: {},
@@ -92,6 +93,7 @@ module.exports = {
 
   // A preset that is used as a base for Jest's configuration
   // preset: undefined,
+  "preset": "jest-puppeteer",
 
   // Run tests from one or more projects
   // projects: undefined,
